@@ -10,7 +10,7 @@ const Landingpage = ({ title, logo }) => {
     <div className="landingpage">
       {/* <Navbar /> */}
       <div className="loginsection">
-        {title == "Login" ? (
+        {title === "Login" ? (
           <Authpage title="Login" />
         ) : (
           <Authpage title="Signup">

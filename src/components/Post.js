@@ -4,7 +4,7 @@ const Post = ({ image, video, title, name, tag, desc, likes, comments }) => {
   return (
     <div className="postcontainer">
       <div className="postheader">
-        <img className="profilepic" src={image} alt=" this is image" />
+        <img className="profilepic" src={image} alt=" this is profile" />
 
         <div className="headerstyle">
           <div className="userinfo">
@@ -18,9 +18,9 @@ const Post = ({ image, video, title, name, tag, desc, likes, comments }) => {
         </div>
       </div>
       {image ? (
-        <img src={image} alt="this an image" className="post" />
+        <img src={image} alt="this an post" className="post" />
       ) : (
-        <video src={video} alt="this is video" className="post" />
+        <video src={video} alt="this is postv" className="post" />
       )}
       <div className="postbottom">
         <h3>{title}</h3>
