@@ -1,0 +1,87 @@
+.logincontainer {
+  border: 0.1px solid rgba(16, 173, 173, 0.555);
+  width: 365px;
+  min-height: 350px;
+  max-height: 410px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2em 0.5em;
+  color: aliceblue;
+}
+.login {
+  margin-top: 10px;
+  font-size: 27px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form > input {
+  width: 290px;
+  padding-top: 5px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 0.1px solid rgba(16, 173, 173, 0.459);
+  margin-bottom: 1em;
+  background-color: #1f1d1d;
+  color: rgb(67, 139, 206);
+  font-size: 15px;
+  font-weight: 600;
+}
+.getin {
+  padding: 0.4em 6.2em;
+  background-color: rgb(118, 235, 206);
+  border-radius: 7px;
+  border: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: bolder;
+  font-size: 19px;
+}
+.forget {
+  align-self: flex-end;
+  color: aliceblue;
+  margin-bottom: 20px;
+  margin-top: -5px;
+}
+.noaccount {
+  color: aliceblue;
+  margin-top: 5px;
+}
+.title {
+  align-self: flex-start;
+  color: aliceblue;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+.checkinbox {
+  margin: 10px 30px;
+  align-self: center;
+}
+.resetbtn {
+  padding: 0.4em 4.5em;
+  background-color: rgb(118, 235, 206);
+  border-radius: 7px;
+  border: none;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: bolder;
+  font-size: 19px;
+}
+.profilepic {
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+  border: 0.3px solid rgb(83, 221, 186);
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 10px;
+  color: rgb(83, 221, 186);
+}

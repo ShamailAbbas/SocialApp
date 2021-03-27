@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.landingpage {
+  height: 100vh;
+  width: 100vw;
+  background-color: #1f1d1d;
+}
+.loginsection {
+  position: absolute;
+  right: 120px;
+  top: 110px;
+}
+.tagbtn {
+  position: absolute;
+  left: 0px;
+  bottom: 80px;
+}
+.profilepic {
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+  border: 0.3px solid rgb(83, 221, 186);
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 10px;
+  color: rgb(83, 221, 186);
+}

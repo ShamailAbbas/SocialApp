@@ -1,0 +1,10 @@
+.tag {
+  font-style: italic;
+  font-size: 25px;
+  font-weight: 10px;
+  background-color: #161616;
+  padding: 0.8em 1.8em;
+  border-radius: 0px 50px 50px 0px;
+  border: none;
+  color: aliceblue;
+}

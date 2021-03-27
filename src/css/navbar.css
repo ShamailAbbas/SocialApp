@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.Nbcontainer {
+  padding-top: 4px;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 12vh;
+  background-color: #161616;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  flex: 0.1;
+  justify-self: left;
+  max-height: 50px;
+  object-fit: contain;
+}
+.right {
+  flex: 0.7;
+  justify-self: right;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.signup {
+  color: aqua;
+
+  cursor: pointer;
+  font-size: 1.3em;
+  margin-left: 30px;
+}
+.search {
+  border-radius: 20px;
+  background-color: #302e2ee0;
+  max-width: 300px;
+  min-width: 250px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  color: aqua;
+}
+.search > input {
+  color: rgba(250, 235, 215, 0.507);
+  background-color: transparent;
+  width: 100%;
+  height: 40px;
+  padding: -10px;
+  border: none;
+  font-size: 15px;
+}
+.logout {
+  padding: 5px 10px;
+  border: 2px solid rgb(88, 4, 88);
+  color: rgb(100, 6, 85);
+  border-radius: 3px;
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: bold;
+}
+.user {
+  width: 55px;
+  cursor: pointer;
+  object-fit: contain;
+  border-radius: 50%;
+}

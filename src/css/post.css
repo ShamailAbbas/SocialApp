@@ -1,0 +1,54 @@
+.postcontainer {
+  display: flex;
+  flex-direction: column;
+
+  border-left: 20px solid rgb(46, 42, 42);
+  border-right: 20px solid rgb(51, 47, 47);
+}
+.postheader {
+  margin-top: 20px;
+  background-color: whitesmoke;
+  min-height: 50px;
+  max-height: auto;
+  display: flex;
+  align-items: center;
+
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.profilepic {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  border: none;
+  padding: 0;
+}
+.userinfo {
+  margin-left: 20px;
+}
+.view {
+  padding: 5px 16px;
+  border: none;
+  color: aqua;
+  border-radius: 3px;
+  background-color: black;
+  font-size: 15px;
+  opacity: 0.9;
+}
+.postbottom {
+  background-color: whitesmoke;
+  min-height: 70px;
+  max-height: auto;
+  padding: 15px 20px;
+}
+.post {
+  max-height: 300px;
+  width: 700px;
+}
+.headerstyle {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}

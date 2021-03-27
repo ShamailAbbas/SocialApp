@@ -1,0 +1,16 @@
+.pagecontainer {
+  height: 88vh;
+  width: 100vw;
+  background-color: #1f1d1d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: scroll;
+}
+.pagecontainer::-webkit-scrollbar {
+  display: none;
+}
+.pagecontainer {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
