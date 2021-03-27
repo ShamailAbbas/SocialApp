@@ -1,10 +1,10 @@
 import React from "react";
-import Navbar from "./Navbar";
+
 import "../css/Landingpage.css";
 import Authpage from "./Authpage";
 import Tag from "./Tag";
 import Image from "@material-ui/icons/Image";
-import Resetpassord from "./Resetpassord";
+
 const Landingpage = ({ title, logo }) => {
   return (
     <div className="landingpage">

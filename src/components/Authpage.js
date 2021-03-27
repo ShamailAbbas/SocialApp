@@ -6,7 +6,7 @@ const Authpage = ({ children, title, logo }) => {
     <div className="logincontainer">
       <p className="login">{title}</p>
       <form className="form">
-        {title == "Signup" ? (
+        {title === "Signup" ? (
           <>
             <p className="title">Full Name</p>
             <input />
@@ -18,7 +18,7 @@ const Authpage = ({ children, title, logo }) => {
         <input />
         <p className="title">Password</p>
         <input /> {children}
-        {title == "Login" ? (
+        {title === "Login" ? (
           <Link to="/Passwordreset">
             <p className="forget">Forgot password?</p>{" "}
           </Link>
@@ -26,7 +26,7 @@ const Authpage = ({ children, title, logo }) => {
           ""
         )}
         <button className="getin">Get In</button>
-        {title == "Login" ? (
+        {title === "Login" ? (
           <Link to="/Signup">
             <p className="noaccount">Don't have an account?</p>
           </Link>
