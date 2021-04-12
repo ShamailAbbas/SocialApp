@@ -1,3 +1,4 @@
-const url = "http://localhost:5000/Feeds/";
-// const url = 'https://shamail.herokuapp.com/Feeds/'
+// const url = "http://localhost:5000";
+const url = "https://myownfb.herokuapp.com";
+
 export default url;

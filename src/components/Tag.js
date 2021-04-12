@@ -1,7 +1,13 @@
 import React from "react";
 import "../css/Tag.css";
-const Tag = () => {
-  return <button className="tag">Build Your Gaming Network</button>;
+const Tag = ({ title }) => {
+  return (
+    <button className="tag">
+      {title === "Login"
+        ? "Build Your Gaming Network"
+        : "Community To Connect Gamers"}
+    </button>
+  );
 };
 
 export default Tag;

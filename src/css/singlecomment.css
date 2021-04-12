@@ -1,0 +1,26 @@
+.commentfield {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid rgb(61, 60, 60);
+  width: 95%;
+  padding: 5px 5px;
+  background-color: #d6d4d4;
+  font-size: 1em;
+  opacity: 0.8;
+  margin-left: 20px;
+}
+
+.cmntbtn {
+  padding: 5px 10px;
+  margin-right: 10px;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: rgb(35, 141, 141);
+  background: #000;
+  border: none;
+  border-radius: 2px;
+  font-size: 0.8em;
+  opacity: 0.9;
+}

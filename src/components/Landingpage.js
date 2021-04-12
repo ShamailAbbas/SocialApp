@@ -1,28 +1,28 @@
 import React from "react";
-
+import Bg1 from "../images/Bg1.SVG";
 import "../css/Landingpage.css";
 import Authpage from "./Authpage";
 import Tag from "./Tag";
-import Image from "@material-ui/icons/Image";
 
 const Landingpage = ({ title, logo }) => {
   return (
     <div className="landingpage">
-      {/* <Navbar /> */}
-      <div className="loginsection">
-        {title === "Login" ? (
-          <Authpage title="Login" />
-        ) : (
-          <Authpage title="Signup">
-            <div className="profilepic">
-              <Image />
-              <p>Upload Profile Pic</p>
-            </div>
-          </Authpage>
-        )}
-      </div>
+      <img className="backgroundimage" src={Bg1} alt="background image" />
+      {title === "Signup" ? (
+        <div className="tagline">
+          <p>
+            Grow Your Organic audience and create impact of your <br></br>
+            presence on this plateform.
+          </p>
+        </div>
+      ) : (
+        ""
+      )}
+
+      <Authpage title={title} />
+
       <div className="tagbtn">
-        <Tag />
+        <Tag title={title} />
       </div>
     </div>
   );

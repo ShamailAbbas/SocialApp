@@ -1,37 +1,88 @@
 import React from "react";
 import "../css/post.css";
-const Post = ({ image, video, title, name, tag, desc, likes, comments }) => {
+import url from "./url";
+import { Link } from "react-router-dom";
+import Singlecomment from "./Singlecomment";
+import Getcomment from "./Getcomment";
+import Like from "./Like";
+import { connect } from "react-redux";
+
+const Post = ({
+  owner,
+  post,
+  profilepic,
+  title,
+  name,
+  tag,
+  createdat,
+  desc,
+  likes,
+  comments,
+
+  dispatch,
+}) => {
+  const fileName = post;
+  const fileExtension = fileName?.split(".").pop();
+  console.log("filetype is ", fileExtension);
+
   return (
     <div className="postcontainer">
       <div className="postheader">
-        <img className="profilepic" src={image} alt=" this is profile" />
+        <img
+          className="uploaderpic"
+          src={`${url}/${profilepic}`}
+          alt=" this is profile"
+        />
 
         <div className="headerstyle">
           <div className="userinfo">
-            <h3>{name}</h3>
-            <p>{tag}</p>
+            <p className="username">{name}</p>
+            <p className="usertags">{tag}</p>
+            <p className="timestamp">posted on {createdat}</p>
           </div>
+
           <div>
-            {" "}
-            <button className="view">View</button>
+            <Link to="/Viewprofile">
+              <button
+                onClick={() => {
+                  dispatch({ type: "COUSERPROFILE", payload: owner });
+                }}
+                className="view"
+              >
+                VIEW
+              </button>
+            </Link>
           </div>
         </div>
       </div>
-      {image ? (
-        <img src={image} alt="this an post" className="post" />
+      {fileExtension == "jpg" ||
+      fileExtension == "png" ||
+      fileExtension == "jpeg" ||
+      fileExtension == "gif" ? (
+        <>
+          <img src={`${url}/${post}`} alt="this an post" className="post" />
+        </>
       ) : (
-        <video src={video} alt="this is postv" className="post" />
+        <video
+          src={`${url}/${post}`}
+          alt="this is postv"
+          className="post"
+          controls
+        />
       )}
       <div className="postbottom">
-        <h3>{title}</h3>
-        <p>{desc}</p>
-        <div>
-          {likes} {"  "} Likes
-        </div>
-        <div>{comments}</div>
+        <Like likes={likes} />
+        <p className="description">{title}</p>
+        <p className="description">{desc}</p>
+
+        <Singlecomment />
+
+        <Getcomment comments={comments} />
       </div>
     </div>
   );
 };
 
-export default Post;
+const mapStateToProps = (state) => ({});
+
+export default connect(mapStateToProps)(Post);

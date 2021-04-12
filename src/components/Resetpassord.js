@@ -1,13 +1,13 @@
 import React from "react";
-import "../css/Login.css";
-import logo from "../images/logo.PNG";
+import "../css/Resetpassword.css";
+import logo from "../images/Logo.SVG";
 import Pagecontainer from "./Pagecontainer";
 const Resetpassord = () => {
   return (
     <Pagecontainer>
-      <div className="logincontainer">
+      <div className="resetcontainer">
         <img src={logo} alt="AreaGG" />
-        <form className="form">
+        <form className="resetform">
           <p className="title">Email</p>
           <input />
           <button className="resetbtn">Reset Password</button>

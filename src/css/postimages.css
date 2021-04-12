@@ -1,0 +1,14 @@
+.postthumbnail {
+  padding: 10px;
+  width: 250px;
+  height: 250px;
+  margin: 20px;
+}
+.postwrapper {
+  margin: 10px;
+  border: 2px solid aqua;
+}
+.postwrapper > img {
+  width: 200px;
+  height: 200px;
+}

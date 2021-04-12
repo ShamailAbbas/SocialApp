@@ -1,0 +1,97 @@
+.joystick {
+  margin-top: 5vh;
+  width: 85vw;
+  object-fit: fill;
+}
+.linesone {
+  left: 20px;
+
+  position: absolute;
+}
+.linestwo {
+  right: 20px;
+  bottom: 20px;
+  position: absolute;
+  transform: rotateZ(-180deg);
+}
+.addpostcontainer {
+  border: 0.1px solid rgba(16, 173, 173, 0.555);
+  width: 365px;
+  min-height: 350px;
+  max-height: 410px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1.8em 5em;
+  color: aliceblue;
+  position: absolute;
+  left: 500px;
+  top: 150px;
+}
+.newpost {
+  margin-top: 10px;
+  font-size: 27px;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+.uploadform {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.uploadform > input {
+  width: 290px;
+  padding-top: 5px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid rgba(16, 173, 173, 0.459);
+  margin-bottom: 1em;
+  background-color: #1a1a1a;
+  color: rgb(67, 139, 206);
+  font-size: 15px;
+  font-weight: 600;
+}
+.title {
+  align-self: flex-start;
+  color: aliceblue;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  opacity: 0.8;
+  margin-left: 5px;
+  font-size: 17px;
+}
+.inputfile {
+  display: none;
+}
+.selectfile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 7px 14px;
+  border: 1px solid rgb(118, 235, 206);
+  border-radius: 5px;
+  color: rgb(118, 235, 206);
+}
+.imageicon {
+  margin-right: 5px;
+  font-size: 18px;
+}
+.selectfile > p {
+  font-size: 12px;
+}
+.submitbtn {
+  padding: 0.4em 6.2em;
+  background-color: rgb(118, 235, 206);
+  border-radius: 7px;
+  border: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: bolder;
+  font-size: 19px;
+}

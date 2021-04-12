@@ -1,37 +1,22 @@
 const initialState = {
-  Feeds: [],
-  Loading: true,
-  Busy: false,
-}
+  couserdata: "",
+  showmodel: false,
+};
 const reducer = (state = initialState, action) => {
-  if (action.type === 'FETCH') {
+  if (action.type === "COUSERPROFILE") {
     return {
       ...state,
-      Feeds: action.payload,
-      Loading: false,
-    }
+      couserdata: action.payload,
+    };
   }
-  if (action.type === 'LIKED') {
-    const tempFeeds = state.Feeds.map((items) => {
-      if (items._id === action.payload)
-        items = { ...items, like: items.like + 1 }
-      return items
-    })
-    return { ...state, Feeds: tempFeeds }
-  }
-  if (action.type === 'DELETE') {
-    const tempFeeds = state.Feeds.filter(
-      (items) => items._id !== action.payload
-    )
-    return { ...state, Feeds: tempFeeds }
-  }
-  if (action.type === 'BUSY') {
+  if (action.type === "SHOWMODEL") {
     return {
       ...state,
-      Busy: !state.Busy,
-    }
+      showmodel: !state.showmodel,
+    };
   }
-  return state
-}
 
-export default reducer
+  return state;
+};
+
+export default reducer;

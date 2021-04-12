@@ -9,33 +9,39 @@ import Addpost from "./components/Addpost.js";
 
 import Resetpassord from "./components/Resetpassord.js";
 import Profile from "./components/Profile.js";
+import Viewprofile from "./components/Couserprofile.js";
 
 function App() {
+  const user = localStorage.getItem("currentuser");
   return (
     <>
       <Navbar />
       <Switch>
         <Route path="/Signup">
-          <Landingpage title="Signup" />
+          {user ? <Redirect to="/" /> : <Landingpage title="Signup" />}
         </Route>
         <Route path="/Login">
-          <Landingpage title="Login" />
+          {user ? <Redirect to="/" /> : <Landingpage title="Login" />}
         </Route>
         <Route path="/Passwordreset">
           <Resetpassord />
         </Route>
         <Route path="/Addpost">
-          <Addpost />
+          {user ? <Addpost /> : <Landingpage title="Login" />}
         </Route>
+
         <Route path="/Timeline">
-          <Timeline />
+          {user ? <Timeline /> : <Redirect to="/Login" />}
         </Route>
+        <Route path="/Viewprofile">
+          {user ? <Viewprofile /> : <Redirect to="/Login" />}
+        </Route>
+
         <Route path="/Profile">
-          <Profile />
+          {user ? <Profile /> : <Redirect to="/Login" />}
         </Route>
-        <Route path="/">
-          <Landingpage />
-        </Route>
+
+        <Route path="/">{user ? <Timeline /> : <Redirect to="/Login" />}</Route>
         <Redirect to="/" />
       </Switch>
     </>

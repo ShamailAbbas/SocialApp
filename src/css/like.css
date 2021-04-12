@@ -1,0 +1,13 @@
+.likediv {
+  display: flex;
+  align-items: center;
+  margin: 6px 0px 15px 15px;
+}
+.likediv > img {
+  width: 28px;
+  object-fit: contain;
+  margin-right: 6px;
+}
+.likediv > p {
+  font-size: 1.2em;
+}

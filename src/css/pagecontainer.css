@@ -1,11 +1,11 @@
 .pagecontainer {
   height: 88vh;
   width: 100vw;
-  background-color: #1f1d1d;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: #1a1a1a;
+  display: grid;
+  place-items: center;
   overflow-y: scroll;
+  padding-top: 20px;
 }
 .pagecontainer::-webkit-scrollbar {
   display: none;

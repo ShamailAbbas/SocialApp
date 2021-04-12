@@ -1,0 +1,103 @@
+.logincontainer {
+  border: 0.1px solid rgba(16, 173, 173, 0.555);
+  width: 365px;
+  min-height: 380px;
+  max-height: 800px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px 10px;
+  color: aliceblue;
+  z-index: 1000;
+  position: absolute;
+  top: 30px;
+  right: 120px;
+}
+.login {
+  margin-top: 10px;
+  font-size: 27px;
+  margin-bottom: 10px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form > input {
+  width: 290px;
+  padding-top: 5px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 0.1px solid rgba(16, 173, 173, 0.459);
+  margin-bottom: 1em;
+  background-color: #1a1a1a;
+  color: rgb(67, 139, 206);
+  font-size: 15px;
+  font-weight: 600;
+}
+.getin {
+  padding: 0.4em 6.2em;
+  background-color: rgb(118, 235, 206);
+  border-radius: 7px;
+  border: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: bolder;
+  font-size: 19px;
+}
+.forget {
+  align-self: flex-end;
+  color: aliceblue;
+  margin-bottom: 20px;
+  font-size: 15px;
+  opacity: 0.9;
+  /* margin-top: 5px; */
+}
+.profilepicinput {
+  display: none;
+}
+.selectprofilepic {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 5px 10px;
+  border: 1px solid rgb(118, 235, 206);
+  border-radius: 5px;
+  color: rgb(118, 235, 206);
+}
+.picicon {
+  margin-right: 5px;
+  font-size: 18px;
+}
+.selectprofilepic > p {
+  font-size: 12px;
+}
+
+.noaccount {
+  color: aliceblue;
+  margin-top: 5px;
+  opacity: 0.8;
+}
+.title {
+  align-self: flex-start;
+  color: aliceblue;
+  margin-top: 10px;
+  opacity: 0.8;
+}
+
+.profilepic {
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+  border: 0.3px solid rgb(83, 221, 186);
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 10px;
+  color: rgb(83, 221, 186);
+}

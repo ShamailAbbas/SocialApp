@@ -1,54 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+
 .postcontainer {
   display: flex;
   flex-direction: column;
-
-  border-left: 20px solid rgb(46, 42, 42);
-  border-right: 20px solid rgb(51, 47, 47);
+  border-top: 35px solid rgba(32, 31, 31, 0.89);
+  border-left: 30px solid rgba(32, 31, 31, 0.89);
+  border-right: 30px solid rgba(32, 31, 31, 0.89);
+  max-width: 760px;
 }
 .postheader {
   margin-top: 20px;
-  background-color: whitesmoke;
-  min-height: 50px;
-  max-height: auto;
+  background-color: #d6d4d4;
+  height: 100px;
+
   display: flex;
   align-items: center;
-
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-right: 20px;
-  padding-left: 20px;
+  margin-top: 0;
+  padding-bottom: 5px;
+  padding-right: 30px;
+  padding-left: 30px;
 }
-.profilepic {
-  width: 70px;
-  height: 70px;
-  border-radius: 100%;
-  border: none;
-  padding: 0;
+.uploaderpic {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
 }
 .userinfo {
-  margin-left: 20px;
+  margin-left: 10px;
+}
+.username {
+  font-size: 25px;
+
+  color: #252424f1;
+  font-family: "Poppins", sans-serif;
+}
+.usertags {
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  color: #302d2df1;
+  text-transform: uppercase;
+}
+.timestamp {
+  font-size: 12px;
+  opacity: 0.5;
 }
 .view {
-  padding: 5px 16px;
+  padding: 7px 16px;
   border: none;
   color: aqua;
   border-radius: 3px;
   background-color: black;
   font-size: 15px;
   opacity: 0.9;
+  cursor: pointer;
 }
 .postbottom {
-  background-color: whitesmoke;
-  min-height: 70px;
+  background-color: #d6d4d4;
+  min-height: 180px;
   max-height: auto;
   padding: 15px 20px;
 }
+.description {
+  margin: 5px 15px 15px 15px;
+  font-size: 14px;
+  color: rgb(73, 72, 72);
+  font-weight: bolder;
+}
 .post {
-  max-height: 300px;
+  max-height: 350px;
   width: 700px;
+  background-color: #1a1a1a;
 }
 .headerstyle {
   flex: 1;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }

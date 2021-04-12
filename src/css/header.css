@@ -1,0 +1,77 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 260px;
+  background-color: #31403f;
+  padding: 10px 25px;
+}
+
+.outercircle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px dashed aqua;
+  width: 170px;
+  height: 170px;
+  border-radius: 100%;
+}
+.innercircle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px dashed goldenrod;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+}
+.profilepicture {
+  border-radius: 100%;
+  width: 120px;
+  height: 120px;
+}
+.infocenter {
+  flex: 0.5;
+  padding-top: 10px;
+}
+.infocenter > h3 {
+  color: azure;
+  font-size: 15;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+.infocenter > p {
+  color: aqua;
+  font-size: 15;
+}
+.stats {
+  margin-top: 10px;
+  display: flex;
+
+  padding: 5px;
+}
+.userstats {
+  margin-right: 10px;
+  color: aliceblue;
+}
+.editprofile {
+  margin-top: 65px;
+  padding: 5px 16px;
+  border: 2px solid aqua;
+  color: aqua;
+  border-radius: 5px;
+  background-color: transparent;
+  font-size: 15px;
+  opacity: 0.9;
+  margin-right: 30px;
+}
+.rightsection {
+  margin-top: 30px;
+  flex: 0.25;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.rightsection > img {
+  width: 45px;
+  margin: 0px 8px;
+}

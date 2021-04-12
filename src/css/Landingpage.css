@@ -2,23 +2,38 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow: hidden;
 }
 
 .landingpage {
-  height: 100vh;
+  height: 88vh;
   width: 100vw;
-  background-color: #1f1d1d;
+  background-color: #1a1a1a;
+  overflow: hidden;
+  position: relative;
 }
-.loginsection {
+.backgroundimage {
+  margin-top: -20px;
+  margin-left: 30px;
+  z-index: -1;
+}
+.tagline {
   position: absolute;
-  right: 120px;
-  top: 110px;
+  top: 50px;
+  left: 100px;
+  color: white;
+  max-width: 700px;
+  padding: 50px 100px;
+  background-color: #1a1a1abb;
+  text-align: center;
+  line-height: 25px;
+  font-size: 18px;
+  opacity: 0.8;
+  font-family: Poppins, sans-serif;
 }
 .tagbtn {
   position: absolute;
   left: 0px;
-  bottom: 80px;
+  bottom: 70px;
 }
 .profilepic {
   display: flex;

@@ -1,0 +1,37 @@
+.randomusercontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* margin-right: 30px; */
+  padding: 4px 2px;
+  border: 2px solid #1f1f1f1f;
+  background-color: #1f1f1fa6;
+  border-radius: 5px;
+  margin: 5px 28px;
+  width: 150px;
+}
+.randomuserpic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.randomusertitle {
+  margin-top: 6px;
+  padding: 4px 10px;
+
+  color: aqua;
+
+  font-size: 15px;
+  opacity: 0.9;
+}
+.randomuserbutton {
+  margin-top: 6px;
+  padding: 4px 10px;
+  border: 2px solid aqua;
+  color: aqua;
+  border-radius: 5px;
+  background-color: transparent;
+  font-size: 15px;
+  opacity: 0.9;
+}

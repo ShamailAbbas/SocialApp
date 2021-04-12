@@ -1,0 +1,20 @@
+.profilecontainer {
+  background-color: #1f1d1d;
+  padding-right: 17vw;
+  padding-left: 17vw;
+  height: 88vh;
+  width: 100vw;
+}
+.postimages {
+  display: flex;
+  margin: 20px;
+  padding: 20px;
+  overflow-x: scroll;
+}
+.postimages::-webkit-scrollbar {
+  display: none;
+}
+.postimages {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
