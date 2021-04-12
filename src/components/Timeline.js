@@ -25,7 +25,7 @@ const Timeline = () => {
 
   const refresh = (userid) => {
     console.log("user id is ", userid);
-    const users = Randomuser.filter((users) => users.owner._id != userid);
+    const users = Randomuser.filter((users) => users.owner._id !== userid);
 
     setRandomuser(users);
   };

@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import url from "./url";
-import Postcontainer from "./Pagecontainer";
 import "../css/profile.css";
 import Postimages from "./Postimages";
 import Model from "./Model";

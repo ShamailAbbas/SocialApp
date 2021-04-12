@@ -7,7 +7,7 @@ import Tag from "./Tag";
 const Landingpage = ({ title }) => {
   return (
     <div className="landingpage">
-      <img className="backgroundimage" src={Bg1} alt="background image" />
+      <img className="backgroundimage" src={Bg1} alt="background " />
       {title === "Signup" ? (
         <div className="tagline">
           <p>
