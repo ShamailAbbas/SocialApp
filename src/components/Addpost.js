@@ -15,11 +15,7 @@ const Addpost = () => {
 
   const uploadfc = async (e) => {
     e.preventDefault();
-    const data = {
-      title,
-      desc,
-      file,
-    };
+
     const formData = new FormData();
 
     formData.append("file", file);
@@ -43,7 +39,7 @@ const Addpost = () => {
 
       <div className="addpostcontainer">
         <p className="newpost">New Post</p>
-        {/* <form className="uploadform"> */}
+
         <form
           className="uploadform"
           onSubmit={(e) => uploadfc(e)}

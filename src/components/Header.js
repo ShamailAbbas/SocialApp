@@ -14,7 +14,7 @@ const Header = ({ renderingon, couserdata, stats, children }) => {
       <div className="profileleft">
         <div className="outercircle">
           <div className="innercircle">
-            {renderingon == "couserprofile" ? (
+            {renderingon === "couserprofile" ? (
               <img
                 className="profilepicture"
                 src={`${url}/${couserdata.profilepic}`}
@@ -29,7 +29,7 @@ const Header = ({ renderingon, couserdata, stats, children }) => {
             )}
           </div>
         </div>
-        {renderingon == "couserprofile" ? (
+        {renderingon === "couserprofile" ? (
           ""
         ) : (
           <>
@@ -50,7 +50,7 @@ const Header = ({ renderingon, couserdata, stats, children }) => {
         )}
       </div>
       <div className="infocenter">
-        {renderingon == "couserprofile" ? (
+        {renderingon === "couserprofile" ? (
           <>
             <h3>{couserdata.name}</h3>
             <p>{couserdata.tag}</p>

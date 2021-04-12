@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Pagecontainer from "./Pagecontainer";
 import "../css/profile.css";
 import Postimages from "./Postimages";
 
