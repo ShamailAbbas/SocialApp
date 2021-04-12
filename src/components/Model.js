@@ -4,7 +4,7 @@ import url from "./url";
 import "../css/model.css";
 import { connect } from "react-redux";
 import axios from "axios";
-const Model = ({ showmodel, dispatch }) => {
+const Model = ({ dispatch }) => {
   const user = JSON.parse(localStorage.getItem("currentuser"));
   const [name, setname] = useState(user.name);
   const [email, setemail] = useState(user.email);

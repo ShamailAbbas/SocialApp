@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Pagecontainer from "./Pagecontainer";
 import Post from "./Post";
 import axios from "axios";
 import url from "./url";

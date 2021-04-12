@@ -5,8 +5,6 @@ import Youtube from "../images/youtube.SVG";
 import Gmail from "../images/gmail.SVG";
 import Game from "../images/game.SVG";
 import Twitter from "../images/twitter.SVG";
-import outercircle from "../images/outercircle.SVG";
-import innercircle from "../images/innercircle.SVG";
 import url from "./url";
 const Header = ({ renderingon, couserdata, stats, children }) => {
   const user = JSON.parse(localStorage.getItem("currentuser"));

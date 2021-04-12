@@ -55,10 +55,10 @@ const Post = ({
           </div>
         </div>
       </div>
-      {fileExtension == "jpg" ||
-      fileExtension == "png" ||
-      fileExtension == "jpeg" ||
-      fileExtension == "gif" ? (
+      {fileExtension === "jpg" ||
+      fileExtension === "png" ||
+      fileExtension === "jpeg" ||
+      fileExtension === "gif" ? (
         <>
           <img src={`${url}/${post}`} alt="this an post" className="post" />
         </>

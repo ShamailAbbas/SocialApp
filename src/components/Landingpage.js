@@ -4,7 +4,7 @@ import "../css/Landingpage.css";
 import Authpage from "./Authpage";
 import Tag from "./Tag";
 
-const Landingpage = ({ title, logo }) => {
+const Landingpage = ({ title }) => {
   return (
     <div className="landingpage">
       <img className="backgroundimage" src={Bg1} alt="background image" />
