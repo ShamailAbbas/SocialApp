@@ -103,7 +103,7 @@ const Viewprofile = ({ couserdata }) => {
     <div className="profilecontainer">
       <Header renderingon="couserprofile" couserdata={couserdata} stats={Stats}>
         <button className="editprofile">
-          {Stats.amifollowing == "0" ? "Follow" : "Unfollow"}
+          {Stats.amifollowing === "0" ? "Follow" : "Unfollow"}
         </button>
         <button className="editprofile">Message</button>
       </Header>

@@ -71,7 +71,7 @@ const Addpost = () => {
             onChange={(e) => setfile(e.target.files[0])}
           />
 
-          <label for="file" className="selectfile">
+          <label htmlFor="file" className="selectfile">
             <Image className="imageicon" />
             <p> Upload Image or Video of 1min</p>
           </label>

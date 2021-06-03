@@ -79,7 +79,7 @@ const Authpage = ({ title }) => {
               onChange={(e) => setprofilepic(e.target.files[0])}
             />
 
-            <label for="file" className="selectprofilepic">
+            <label htmlFor="file" className="selectprofilepic">
               <Image className="picicon" />
               <p> Upload Profile Pic</p>
             </label>
