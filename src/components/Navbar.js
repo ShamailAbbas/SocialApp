@@ -58,18 +58,15 @@ const Navbar = () => {
               <p className="navbaritems">Timeline</p>
             </Link>
             <Link to="/Profile">
-              <img
-                className="user"
-                src={`${url}/${profilepic}`}
-                alt="this is profile"
-              />
+              <img className="user" src={profilepic} alt="profile pic" />
             </Link>
             <Link to="/Logout">
               <button
                 className="logout"
                 onClick={() => {
                   localStorage.clear();
-                  window.location.replace("http://localhost:3000/");
+                  // window.location.replace("http://areagg.netlify.app/Login");
+                  window.location.replace("http://localhost:3000/Login");
                 }}
               >
                 Logout

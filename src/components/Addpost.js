@@ -8,6 +8,7 @@ import lines from "../images/lines.SVG";
 import joystick from "../images/joystick.SVG";
 const Addpost = () => {
   const user = JSON.parse(localStorage.getItem("currentuser"));
+  const Authorization = JSON.parse(localStorage.getItem("Authorization"));
   const owner = user?._id;
   const [title, settitle] = useState("");
   const [desc, setdesc] = useState("");
@@ -22,12 +23,27 @@ const Addpost = () => {
     formData.append("title", title);
     formData.append("desc", desc);
     formData.append("owner", owner);
-    const res = await axios.post(`${url}/post/addpost`, formData);
-    console.log(res.data.success);
-    if (res.data.success) {
-      alert("uploaded successfully");
-    } else {
-      alert("uploaded failed please retry");
+
+    try {
+      const res = await axios.post(`${url}/post/addpost`, formData, {
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${Authorization}`,
+        },
+      });
+      console.log(res);
+      if (res.data.success) {
+        alert("uploaded successfully");
+      } else {
+        console.log("respose code is ", res.status);
+        console.log(res.data.error);
+        alert("uploaded failed please retry");
+      }
+    } catch (error) {
+      if (error.response.status == 403) {
+        localStorage.clear();
+        window.location.replace("http://localhost:3000/Login");
+      }
     }
   };
   return (

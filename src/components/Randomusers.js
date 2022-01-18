@@ -19,11 +19,7 @@ const Randomusers = ({ profilepic, username, userid, refresh }) => {
 
   return (
     <div className="randomusercontainer">
-      <img
-        className="randomuserpic"
-        src={`${url}/${profilepic}`}
-        alt="random users"
-      />
+      <img className="randomuserpic" src={profilepic} alt="random users" />
       <h3 className="randomusertitle">{username}</h3>
       <button className="randomuserbutton" onClick={() => follow(userid)}>
         Follow

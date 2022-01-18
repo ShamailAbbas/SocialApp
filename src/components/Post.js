@@ -28,11 +28,7 @@ const Post = ({
   return (
     <div className="postcontainer">
       <div className="postheader">
-        <img
-          className="uploaderpic"
-          src={`${url}/${profilepic}`}
-          alt=" this is profile"
-        />
+        <img className="uploaderpic" src={profilepic} alt=" this is profile" />
 
         <div className="headerstyle">
           <div className="userinfo">
@@ -58,17 +54,13 @@ const Post = ({
       {fileExtension === "jpg" ||
       fileExtension === "png" ||
       fileExtension === "jpeg" ||
+      fileExtension === "PNG" ||
       fileExtension === "gif" ? (
         <>
-          <img src={`${url}/${post}`} alt="this an post" className="post" />
+          <img src={post} alt="this an post" className="post" />
         </>
       ) : (
-        <video
-          src={`${url}/${post}`}
-          alt="this is postv"
-          className="post"
-          controls
-        />
+        <video src={post} alt="this is postv" className="post" controls />
       )}
       <div className="postbottom">
         <Like likes={likes} />

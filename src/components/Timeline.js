@@ -8,17 +8,29 @@ import Randomusers from "./Randomusers";
 
 const Timeline = () => {
   const user = JSON.parse(localStorage.getItem("currentuser"));
+  const Authorization = JSON.parse(localStorage.getItem("Authorization"));
   const currentuser = { currentuser: user?._id };
 
   const [posts, setposts] = useState([]);
   const [Randomuser, setRandomuser] = useState([]);
   const getposts = async () => {
-    const res = await axios.post(`${url}/post/getposts`, currentuser);
+    const res = await axios.post(`${url}/post/getposts`, currentuser,{
+      headers:{
+      'Content-Type': 'application/json',
+      "Authorization":`Bearer ${Authorization}`,      
+    },
+    });
 
     setposts(res.data.posts);
+    console.log("post are ",posts)
   };
   const getrandomposts = async () => {
-    const res = await axios.post(`${url}/post/getrandomposts`, currentuser);
+    const res = await axios.post(`${url}/post/getrandomposts`, currentuser,{
+      headers:{
+      'Content-Type': 'application/json',
+      "Authorization":`Bearer ${Authorization}`,      
+    },
+    });
 
     setRandomuser(res.data.users);
   };
